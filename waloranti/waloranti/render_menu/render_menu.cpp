@@ -235,6 +235,8 @@ void render_menu::render()
 			ImGui::SliderInt(skcrypt("##aimbot_smooth"), &cfg::aimbot_smooth, 1, 20);
 			ImGui::Text(skcrypt("Recoil length"));
 			ImGui::SliderInt(skcrypt("##recoil_length"), &cfg::recoil_length, 0, 50);
+			ImGui::Text(skcrypt("Head offset"));
+			ImGui::SliderInt(skcrypt("##Head_offset"), &cfg::head_offset_y, 0, 20);
 		break;
 		case 1:
 			ImGui::Text(skcrypt("Field of View"));
