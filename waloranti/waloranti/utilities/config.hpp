@@ -8,7 +8,7 @@ namespace cfg
 	constexpr int aimbot_key{ VK_LBUTTON };
 	constexpr int magnet_key{ VK_XBUTTON2 };
 	constexpr int flick_key{ VK_XBUTTON1 };
-	constexpr int toggle{ VK_CAPITAL };
+	constexpr int toggle_key{ VK_CAPITAL };
 	constexpr int head_offset_x{ 2 };
 	inline int head_offset_y{ 4 };
 	inline int magnet_fov{ 9 };
