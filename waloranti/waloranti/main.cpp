@@ -107,7 +107,7 @@ int main()
             }
         }
 
-        else if ( utilities::is_pressed( cfg::aimbot_key ) )
+        else if ( utilities::is_pressed( cfg::aimbot_key )  && utilities::is_toggled( cfg::toggle_key ) )
         {
             enemy_head = enemy.find_closest_enemy_head( cfg::aimbot_fov + static_cast< int >( cfg::recoil_offset ) );
 
