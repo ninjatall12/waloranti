@@ -4,10 +4,12 @@
 #include "../utilities/config.hpp"
 #include "../utilities/skcrypt.hpp"
 #include "../myfont.hpp"
+#pragma comment(lib,"d3d11.lib")
+#pragma comment(lib,"d3dx11.lib")
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND window, UINT message, WPARAM wideParameter, LPARAM longParameter);
 
-long __stdcall window_process(HWND window, UINT message, WPARAM wideParameter, LPARAM longParameter)
+static LRESULT CALLBACK window_process(HWND window, UINT message, WPARAM wideParameter, LPARAM longParameter)
 {
 	if (ImGui_ImplWin32_WndProcHandler(window, message, wideParameter, longParameter))
 		return true;
