@@ -74,7 +74,7 @@ int main()
     utilities::set_timer_resolution( );
     utilities::rename_executable( __argv[ 0 ] );
 
-    control_mouse mouse( skcrypt( "COM2" ), CBR_115200 );
+    control_mouse mouse( skcrypt( "COM4" ), CBR_115200 );
     enemy_scanner enemy;
     stopwatch timer;
 
