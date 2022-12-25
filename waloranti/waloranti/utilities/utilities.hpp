@@ -8,6 +8,7 @@
 namespace utilities
 {
 	bool is_pressed( int key );
+	bool is_toggled( int key );
 	void set_timer_resolution( );
 	void set_thread_priority( int priority );
 	void set_process_priority( DWORD priority_class );
