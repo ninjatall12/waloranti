@@ -9,6 +9,10 @@ bool utilities::is_pressed( int key )
 {
 	return ( GetAsyncKeyState( key ) & 0x8000);
 }
+bool utilities::is_toggled( int key )
+{
+	return (GetKeyState( key ));
+}
 
 std::mt19937 mt{ std::random_device{ }( ) };
 int utilities::get_random_int( int min, int max ) 
